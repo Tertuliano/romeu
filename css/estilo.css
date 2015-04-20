@@ -1,3 +1,68 @@
 body {
 	background-color: #000000;
 }
+
+#desktop{
+	background-image: url("../img/tablet.png");
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto;
+	top: 40px;
+	background-repeat: no-repeat;
+	position: relative;
+
+
+}	
+
+#icon-container{
+	background-color: blue;
+	width: 280px;
+	height: 440px;
+	position: absolute;
+	left: 95px;
+	top: 57px;
+}
+
+ul#icones-first-section{
+	background-color: red;
+	padding: 0;
+}
+
+ul#icones-first-section li{
+	display: inline;
+}
+
+ul#icones-first-section li a{
+	padding: 10px 20px;
+}
+
+ul#icones-second-section{
+	background-color: red;
+	padding: 0;
+}
+ul#icones-second-section li{
+	display: inline;
+}
+
+ul#icones-second-section li a{
+	padding: 10px 20px;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+}
+
+ul#icones-second-section li a:hover{
+	opacity: 0.6;
+	border: 5px solid white;
+	border-radius: 50%;
+	padding: 0 0 0 0;
+
+}
+
+
+/*#mobile{
+	background-image: url("../img/phone.png");
+	width: 278px;
+	height: 532px;
+	background-repeat: no-repeat;
+}*/
