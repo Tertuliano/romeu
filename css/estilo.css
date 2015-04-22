@@ -168,8 +168,9 @@ a:hover {
 }
 
 header {
+    margin: 0 auto;
     height: 10px;
-    width: 1200px;
+    width: 100%;
     /*largura do topo*/
 }
 /*----------------------------------------------------------
@@ -198,6 +199,41 @@ Seção .TOPBAR <<<<<========================================
 .top-bar a:hover {
     background: #fff;
 }
+
+/*----------------------------------------------------------
+Seção .OUTSIDE MENU <<<<<========================================
+----------------------------------------------------------*/
+
+.outside-menu {
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    padding: 5px 0px 15px;
+}
+.outside-menu a{
+    display: inline-block;
+    margin: 50px 4px;
+    padding: 0px 4px;
+    color: #fff;
+    line-height: 20px;  
+    font-style: italic;
+    font-size: 13px;
+    border-radius: 3px;
+    background: rgba(103,59,77,0.1);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.outside-menu a:hover{
+    background: rgba(103,59,77,0.4);
+}
+.outside-menu a.current-menu,
+.outside-menu a.current-menu:hover{
+    background: rgba(103,59,77,0.4);
+}
+
 /*----------------------------------------------------------
 Seção .SLOGAN <<<<<========================================
 ----------------------------------------------------------*/
@@ -207,7 +243,7 @@ Seção .SLOGAN <<<<<========================================
     margin: 0 auto;
     height: 190px;
     text-align: center;
-    width: 1200px;
+    width: 100%;
 }
 
 h2 span {
@@ -222,7 +258,7 @@ h2 span {
 .slogan h3 {
     color: #f814d0;
     margin: 0 auto;
-    width: 900px;
+    width: 100%;
 }
 /*----------------------------------------------------------
 Seção .CONTAINER  <<<<<=============
@@ -230,6 +266,8 @@ Seção .CONTAINER  <<<<<=============
 
 .container {
     background: url("../img/tablet.png");
+    background-size: 100%;
+    width: 100%;
     max-width: 1024px;
     height: 568px;
     margin: 0 auto;
@@ -246,7 +284,7 @@ footer {
     clear: both;
     height: 50px;
     padding: 10px 0px;
-    width: 1200px;
+    width: 100%;
 }
 
 .copyright {
