@@ -1,68 +1,263 @@
+@font-face {
+    font-family: 'Cyberfunk';
+    src: url('../fonts/Cyberfunk.eot') format('eot'), url('../fonts/Cyberfunk.woff') format('woff'), url('../fonts/Cyberfunk.ttf') format('truetype'), url('../fonts/Cyberfunk.svg#Cyberfunk') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------------------------------------------------
+CSS RESET <<<<<========================================
+----------------------------------------------------------*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+html,
 body {
-	background-color: #000000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-#desktop{
-	background-image: url("../img/tablet.png");
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto;
-	top: 40px;
-	background-repeat: no-repeat;
-	position: relative;
-
-
-}	
-
-#icon-container{
-	background-color: blue;
-	width: 280px;
-	height: 440px;
-	position: absolute;
-	left: 95px;
-	top: 57px;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-ul#icones-first-section{
-	background-color: red;
-	padding: 0;
+fieldset,
+img {
+    border: 0;
 }
 
-ul#icones-first-section li{
-	display: inline;
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
 }
 
-ul#icones-first-section li a{
-	padding: 10px 20px;
+ol,
+ul {
+    list-style: none;
 }
 
-ul#icones-second-section{
-	background-color: red;
-	padding: 0;
-}
-ul#icones-second-section li{
-	display: inline;
+caption,
+th {
+    text-align: left;
 }
 
-ul#icones-second-section li a{
-	padding: 10px 20px;
-	display: inline-block;
-	width: 48px;
-	height: 48px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
 }
 
-ul#icones-second-section li a:hover{
-	opacity: 0.6;
-	border: 5px solid white;
-	border-radius: 50%;
-	padding: 0 0 0 0;
+q:before,
+q:after {
+    content: '';
+}
 
+abbr,
+acronym {
+    border: 0;
+}
+
+section,
+header {
+    display: block;
+}
+/*----------------------------------------------------------
+ESTILO GERAL <<<<<========================================
+----------------------------------------------------------*/
+
+body {
+    font-family: Lato, Raleway;
+    /* Fontes do Google */
+    
+    background: url("background.png");
+    font-size: 18px;
+    color: #868686;
+    /* Cor para o tipo de letra */
+    
+    text-align: left;
+    /* Texto alinhado à esquerda */
+}
+
+.clr {
+    clear: both;
+}
+
+img,
+picture,
+video,
+embed {
+    max-width: 100%;
+    /*define a largura máxima em até 100% do tamanho original*/
+}
+
+h1,
+h2 {
+    color: #FE9380;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    /*espaçamento entre as letras*/
+    
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    /*espaçamento entre as letras*/
+    
+    line-height: 38px;
+}
+
+p {
+    letter-spacing: -1px;
+    /*espaçamento entre as letras*/
+}
+
+a,
+a:link,
+a:visited {
+    color: #FE9380;
+    /*cor dos links*/
+    
+    text-decoration: none;
+    /*retira o sublinhado dos links*/
+}
+
+a:hover {
+    color: #FE5E41;
+    text-shadow: none;
+    /*retira a sombra da fonte*/
+}
+
+header {
+    height: 10px;
+    width: 1200px;
+    /*largura do topo*/
+}
+/*----------------------------------------------------------
+Seção .TOPBAR <<<<<========================================
+----------------------------------------------------------*/
+
+.top-bar {
+    line-height: 24px;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    z-index: 9999;
+    position: relative;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar a {
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: #333;
+    text-shadow: 0px 1px 1px #fff;
+    display: block;
+    float: left;
+}
+
+.top-bar a:hover {
+    background: #fff;
+}
+/*----------------------------------------------------------
+Seção .SLOGAN <<<<<========================================
+----------------------------------------------------------*/
+
+.slogan {
+    font-family: 'Cyberfunk', Lato, Raleway;
+    margin: 0 auto;
+    height: 190px;
+    text-align: center;
+    width: 1200px;
+}
+
+h2 span {
+    color: #11a1ca;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.slogan h3 {
+    color: #f814d0;
+    margin: 0 auto;
+    width: 900px;
+}
+/*----------------------------------------------------------
+Seção .CONTAINER  <<<<<=============
+----------------------------------------------------------*/
+
+.container {
+    background: url("../img/tablet.png");
+    max-width: 1024px;
+    height: 568px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 
-/*#mobile{
-	background-image: url("../img/phone.png");
-	width: 278px;
-	height: 532px;
-	background-repeat: no-repeat;
-}*/
+/*----------------------------------------------------------
+Seção FOOTER - Rodape com 2 colunas <<<<<===================
+----------------------------------------------------------*/
+
+footer {
+    clear: both;
+    height: 50px;
+    padding: 10px 0px;
+    width: 1200px;
+}
+
+.copyright {
+    float: left;
+    margin-left: 250px;
+}
+
+.programador {
+    float: right;
+}
+
+.programador figure {
+    width: 182px;
+}
