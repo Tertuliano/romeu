@@ -8,36 +8,60 @@
     <meta name="keywords" content="design, css, cascading, style, sheets, xhtml, graphic design, w3c, web standards, visual, display, flash" />
     <meta name="description" content="A portal to all places." />
     <meta name="robots" content="all" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>@ Romeu Costa</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="css/responsivo.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsivo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-icons.css"/>
+
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <!-- top bar -->
     <div class="top-bar">
-        <a href="https://www.facebook.com/romeudacosta"><strong>Ícone Facebook</a>
-        <a href="http://pt.linkedin.com/in/romeocosta/">Ícone Linked In</a>
-        <a href="https://www.youtube.com/user/tertulianus">Ícone Youtube</a>
-        <a href="https://twitter.com/romeucosta">Ícone Twitter</a>
-        <div class="clr"></div>
+        <a href="https://www.facebook.com/romeudacosta" class="social-icon si-small si-borderless si-facebook">
+                                <i class="icon-facebook"></i></a>
+        <a href="http://pt.linkedin.com/in/romeocosta/" class="social-icon si-small si-borderless si-linkedin">
+                                <i class="icon-linkedin"></i></a>
+        <a href="https://www.youtube.com/user/tertulianus" class="social-icon si-small si-borderless si-youtube">
+                                <i class="icon-youtube"></i></a>
+                                
+        <a href="https://twitter.com/romeucosta" class="social-icon si-small si-borderless si-twitter">
+                                <i class="icon-twitter"></i></a>
+
+        <span class="right"> 
+        <a href="index.html">Home</a>
+        <a href="https://twitter.com/romeucosta">About</a>
+        <a href="https://twitter.com/romeucosta">Projects</a>
+        <a href="https://twitter.com/romeucosta">Contact</a>
+        </span>
+       <div class="clr"></div>
     </div>
     <!--/ top bar -->
     <header>
-        <h1><a href="index.html" title="Romeu Costa"><span>Logotipo</span></a></h1>
+        <!--<h1><a href="index.html" title="Romeu Costa"><span>Logotipo</span></a></h1>-->
     </header>
+
+  <!-- VIDEO
+    <div class="video-wrap">
+                <video poster="img/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
+                    <source src='img/explore.mp4' type='video/mp4' />
+                    <source src='img/explore.webm' type='video/webm' />
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            
 
     <!--[if lte IE 9]>
 			<p style="font-size: 20px; padding: 50px;">Para Internet Explorer 9...</p>
 			<![endif]-->
     <div class="slogan">
         <h2><span> Hello! </span> How are <span> u </span> today? </h2>
-        <h3>A Portal to all related to Romeu Costa</h3>
+        <h3>Welcome....</h3>
         <nav class="outside-menu">
-        <a class="current-menu" href="index.html#inicio">Let's begin...</a>
+        <a class="current-menu" href="index.html#inicio">Take a tour...</a>
         </nav>
     </div>
     <div class="container">
@@ -64,12 +88,12 @@
 
 				<div class="cn-slide" id="desktop1-a">
 					<h2>Projeto1</h2>
-					<a href="#desktop1" class="cn-voltar">Voltar</a>
+					<a href="#desktop1" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Projeto1</p>
 						<p>Paragrafo2 Projeto2</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop1-b">
 					<h2>Projeto2</h2>
@@ -78,7 +102,7 @@
 						<p>Paragrafo1 Projeto2 </p>
 						<p>Paragrafo2 Projeto2</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop1-c">
 					<h2>Projeto3</h2>
@@ -87,7 +111,7 @@
 						<p>Paragrafo1 Projeto3 </p>
 						<p>Paragrafo2 Projeto3</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Back</span>
 				</div>
 				<div class="cn-slide" id="desktop1-d">
 					<h2>Projeto4</h2>
@@ -96,13 +120,13 @@
 						<p>Paragrafo1 Projeto4 </p>
 						<p>Paragrafo2 Projeto4</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 
 				<!-- Desktop 2 e Submenus -->
 				<div class="cn-slide cn-slide-sub" id="desktop2">
 					<h2>Joomla</h2>
-					<a href="#inicio" class="cn-voltar">Voltar</a>
+					<a href="#inicio" class="cn-voltar">Back</a>
 					<nav>
 						<a href="#desktop2-a">Site1</a>							
 						<a href="#desktop2-b">Site2</a>
@@ -112,45 +136,45 @@
 				</div>
 				<div class="cn-slide" id="desktop2-a">
 					<h2>Site1</h2>
-					<a href="#desktop2" class="cn-voltar">Voltar</a>
+					<a href="#desktop2" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Site1 </p>
 						<p>Paragrafo2 Site1</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop2-b">
 					<h2>Site2</h2>
-					<a href="#desktop2" class="cn-voltar">Voltar</a>
+					<a href="#desktop2" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Site1 </p>
 						<p>Paragrafo2 Site1</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop2-c">
 					<h2>Site3</h2>
-					<a href="#desktop2" class="cn-voltar">Voltar</a>
+					<a href="#desktop2" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Site3 </p>
 						<p>Paragrafo2 Site3</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop2-d">
 					<h2>Site4</h2>
-					<a href="#desktop2" class="cn-voltar">Voltar</a>
+					<a href="#desktop2" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Site4 </p>
 						<p>Paragrafo2 Site4</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 
 				<!-- Desktop 3 e Submenus -->
 				<div class="cn-slide cn-slide-sub" id="desktop3">
 					<h2>Wordpress</h2>
-					<a href="#inicio" class="cn-voltar">Voltar</a>
+					<a href="#inicio" class="cn-voltar">Back</a>
 					<nav>
 						<a href="#desktop3-a">Press1</a>							
 						<a href="#desktop3-b">Press2</a>
@@ -160,45 +184,44 @@
 				</div>
 				<div class="cn-slide" id="desktop3-a">
 					<h2>Press1</h2>
-					<a href="#desktop3" class="cn-voltar">Voltar</a>
+					<a href="#desktop3" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Press1 </p>
 						<p>Paragrafo2 Press1</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop3-b">
 					<h2>Press2</h2>
-					<a href="#desktop3" class="cn-voltar">Voltar</a>
+					<a href="#desktop3" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Press2 </p>
 						<p>Paragrafo2 Press2</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop3-c">
 					<h2>Press3</h2>
-					<a href="#desktop3" class="cn-voltar">Voltar</a>
+					<a href="#desktop3" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Press3 </p>
 						<p>Paragrafo2 Press3</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
 				<div class="cn-slide" id="desktop3-d">
 					<h2>Press4</h2>
-					<a href="#desktop3" class="cn-voltar">Voltar</a>
+					<a href="#desktop3" class="cn-voltar">Back</a>
 					<div class="cn-conteudo">
 						<p>Paragrafo1 Press4 </p>
 						<p>Paragrafo2 Press4</p>
 					</div>
-					<span class="cn-nota">Clique para ver imagem</span>
+					<span class="cn-nota">Keep clicked to show image</span>
 				</div>
         </section>
     </div>
         <footer>
-            <small class="copyright"><p> Copyright © 2015 - Todos os Direitos Reservados </p></small>
-            <small class="programador"><p> Logo Pequeno </p></small>
+            <small class="copyright"><p> Copyright © 2015 - All Rights Reserved | 2009@romeucosta.com</p></small>
         </footer>
         
         <script type="text/javascript">

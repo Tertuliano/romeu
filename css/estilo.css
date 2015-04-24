@@ -170,7 +170,7 @@ a:hover {
 header {
     margin: 0 auto;
     height: 10px;
-    width: 100%;
+    width: 50%;
     /*largura do topo*/
 }
 /*----------------------------------------------------------
@@ -178,18 +178,18 @@ Seção .TOPBAR <<<<<========================================
 ----------------------------------------------------------*/
 
 .top-bar {
-    line-height: 24px;
-    font-size: 11px;
+    line-height: 50px;
+    font-size: 20px;
     background: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
-    z-index: 9999;
+    z-index:9999;
     position: relative;
     box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
 .top-bar a {
-    padding: 0px 10px;
-    letter-spacing: 1px;
+    padding: 0px 20px;
+    letter-spacing: 5px;
     color: #333;
     text-shadow: 0px 1px 1px #fff;
     display: block;
@@ -200,6 +200,12 @@ Seção .TOPBAR <<<<<========================================
     background: #fff;
 }
 
+.top-bar span.right{
+	float:right;
+	font-size: 15px;
+	margin-right: 35%;
+}
+
 /*----------------------------------------------------------
 Seção .OUTSIDE MENU <<<<<========================================
 ----------------------------------------------------------*/
@@ -208,18 +214,18 @@ Seção .OUTSIDE MENU <<<<<========================================
     text-align: center;
     display: block;
     line-height: 30px;
-    padding: 5px 0px 15px;
+    padding: 0px 0px 15px;
 }
 .outside-menu a{
     display: inline-block;
-    margin: 50px 4px;
-    padding: 0px 4px;
+    margin: 30px 4px;
+    padding: 10px 10px;
     color: #fff;
     line-height: 20px;  
     font-style: italic;
-    font-size: 13px;
+    font-size: 25px;
     border-radius: 3px;
-    background: rgba(103,59,77,0.1);
+    background-color: #11a1ca;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -227,12 +233,9 @@ Seção .OUTSIDE MENU <<<<<========================================
     transition: all 0.2s linear;
 }
 .outside-menu a:hover{
-    background: rgba(103,59,77,0.4);
+    background-color: #f814d0;
 }
-.outside-menu a.current-menu,
-.outside-menu a.current-menu:hover{
-    background: rgba(103,59,77,0.4);
-}
+
 
 /*----------------------------------------------------------
 Seção .SLOGAN <<<<<========================================
@@ -248,7 +251,8 @@ Seção .SLOGAN <<<<<========================================
 
 h2 span {
     color: #11a1ca;
-    font-size: 60px;
+    font-size: 50px;
+    top: 200px;
     font-weight: 300;
     letter-spacing: -2px;
     line-height: 60px;
@@ -273,11 +277,39 @@ Seção .CONTAINER  <<<<<=============
     margin: 0 auto;
     background-repeat: no-repeat;
     position: relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    -moz-animation: mymove 5s infinite; /* Mozilla Firefox */
+    animation: mymove 5s infinite;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {top: -200px;}
+    25%  {top: 0px;}
+    75%  {top: 0px}
+    100% {top: 0px;}
+}
+/* Mozilla Firefox */
+@-moz-keyframes mymove {
+    0%   {top: -200px;}
+    25%  {top: 0px;}
+    75%  {top: 0px}
+    100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: -200px;}
+    25%  {top: 0px;}
+    75%  {top: 0px}
+    100% {top: 0px;}
 }
 
 
 /*----------------------------------------------------------
-Seção FOOTER - Rodape com 2 colunas <<<<<===================
+Seção FOOTER  <<<<<===================
 ----------------------------------------------------------*/
 
 footer {
@@ -288,14 +320,45 @@ footer {
 }
 
 .copyright {
+    position: relative;
     float: left;
-    margin-left: 250px;
+    margin-left: 40%;
 }
 
-.programador {
-    float: right;
+
+/*----------------------------------------------------------
+Seção VIDEO  <<<<<===================
+----------------------------------------------------------*/
+
+#page-title.page-title-video {
+  background: none;
+  position: relative;
+  overflow: hidden;
+  z-index: -9999;
 }
 
-.programador figure {
-    width: 182px;
+#page-title.page-title-video .video-wrap {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+.video-wrap {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: -9999;
+}
+
+.video-overlay, .video-placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent url('images/grid.png') repeat;
+  -webkit-backface-visibility: hidden;
+  z-index: -9999;
 }

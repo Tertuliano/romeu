@@ -1,5 +1,0 @@
-http://stackoverflow.com/questions/15679446/laptop-lid-open-effect
-
-http://codepen.io/neoberg/details/istyp
-
-http://premiumcoding.com/css3-tricks-masking-images-css/
