@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'Cyberfunk';
+    src: url('../fonts/Cyberfunk.eot') format('eot'), url('../fonts/Cyberfunk.woff') format('woff'), url('../fonts/Cyberfunk.ttf') format('truetype'), url('../fonts/Cyberfunk.svg#Cyberfunk') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------------------------------------------------
+CSS RESET <<<<<========================================
+----------------------------------------------------------*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+section,
+header {
+    display: block;
+}
+/*----------------------------------------------------------
+ESTILO GERAL <<<<<========================================
+----------------------------------------------------------*/
+
+body {
+    font-family: Lato, Raleway;
+    /* Fontes do Google */
+    
+    background: url("background.png");
+    font-size: 18px;
+    color: #868686;
+    /* Cor para o tipo de letra */
+    
+    text-align: left;
+    /* Texto alinhado à esquerda */
+}
+
+.clr {
+    clear: both;
+}
+
+img,
+picture,
+video,
+embed {
+    max-width: 100%;
+    /*define a largura máxima em até 100% do tamanho original*/
+}
+
+h1,
+h2 {
+    color: #FE9380;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    /*espaçamento entre as letras*/
+    
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    /*espaçamento entre as letras*/
+    
+    line-height: 38px;
+}
+
+p {
+    letter-spacing: -1px;
+    /*espaçamento entre as letras*/
+}
+
+a,
+a:link,
+a:visited {
+    color: #FE9380;
+    /*cor dos links*/
+    
+    text-decoration: none;
+    /*retira o sublinhado dos links*/
+}
+
+a:hover {
+    color: #FE5E41;
+    text-shadow: none;
+    /*retira a sombra da fonte*/
+}
+
+header {
+    margin: 0 auto;
+    height: 10px;
+    width: 50%;
+    /*largura do topo*/
+}
+/*----------------------------------------------------------
+Seção .TOPBAR <<<<<========================================
+----------------------------------------------------------*/
+
+.top-bar {
+    line-height: 50px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    z-index:9999;
+    position: relative;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar a {
+    padding: 0px 15px;
+    letter-spacing: 5px;
+    color: #333;
+    text-shadow: 0px 1px 1px #fff;
+    display: block;
+    float: left;
+}
+
+.top-bar a:hover {
+    background: #fff;
+}
+
+.top-bar span.right{
+	float:right;
+	font-size: 15px;
+	margin-right: 35%;
+}
+
+/*----------------------------------------------------------
+Seção .OUTSIDE MENU <<<<<========================================
+----------------------------------------------------------*/
+
+.outside-menu {
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    padding: 0px 0px 15px;
+}
+.outside-menu a{
+    display: inline-block;
+    margin: 30px 4px;
+    padding: 10px 10px;
+    color: #fff;
+    line-height: 20px;  
+    font-style: italic;
+    font-size: 25px;
+    border-radius: 3px;
+    background-color: #11a1ca;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.outside-menu a:hover{
+    background-color: #f814d0;
+}
+
+
+/*----------------------------------------------------------
+Seção .SLOGAN <<<<<========================================
+----------------------------------------------------------*/
+
+.slogan {
+    font-family: 'Cyberfunk', Lato, Raleway;
+    margin: 0 auto;
+    height: 190px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 span {
+    color: #11a1ca;
+    font-size: 50px;
+    top: 200px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.slogan h3 {
+    color: #C1498F;
+    margin: 0 auto;
+    width: 100%;
+}
+/*----------------------------------------------------------
+Seção .CONTAINER  <<<<<=============
+----------------------------------------------------------*/
+
+.container {
+    background: url("../img/tablet.png");
+    background-size: 100%;
+    width: 100%;
+    max-width: 1024px;
+    height: 70%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    -moz-animation: mymove 5s infinite; /* Mozilla Firefox */
+    animation: mymove 5s infinite;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {top: -200px;}
+    25%  {top: 0px;}
+    75%  {top: 0px}
+    100% {top: 0px;}
+}
+/* Mozilla Firefox */
+@-moz-keyframes mymove {
+    0%   {top: -200px;}
+    25%  {top: 0px;}
+    75%  {top: 0px}
+    100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: -200px;}
+    25%  {top: 0px;}
+    75%  {top: 0px}
+    100% {top: 0px;}
+}
+
+/*----------------------------------------------------------
+Seção VIDEO  <<<<<===================
+----------------------------------------------------------*/
+
+#page-title.page-title-video {
+  background: none;
+  position: relative;
+  overflow: hidden;
+  z-index: -9999;
+}
+
+#page-title.page-title-video .video-wrap {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+.video-wrap {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: -9999;
+}
+
+.video-overlay, .video-placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent url('images/grid.png') repeat;
+  -webkit-backface-visibility: hidden;
+  z-index: -9999;
+}
+/*----------------------------------------------------------
+SCROLL BUTTON  <<<<<===================
+----------------------------------------------------------*/
+.scroll-top-wrapper {
+    position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
