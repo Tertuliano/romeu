@@ -302,6 +302,27 @@ NOTA RODAPÉ SUBMENU FINAL <<<<<=============================
 	background-color: #333;
 	opacity: 0.5;
 }
+/*--------------------------------------------------------------
+MEDIA QUERIES LAPTOP <<<<<======================================
+---------------------------------------------------------------*/
+@media screen and (max-height: 800px){
+.container {
+    background: url("../img/tablet.png");
+    background-size: 100%;
+    width: 100%;
+    max-width: 1024px;
+    height: 90%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    -moz-animation: mymove 5s infinite; /* Mozilla Firefox */
+    animation: mymove 5s infinite;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+}
+
 /*----------------------------------------------------------
 MEDIA QUERIES <<<<<=========================================
 ----------------------------------------------------------*/
